@@ -1,3 +1,3 @@
 # Hello Professor Okalu - adding hello to your README PAGE 
-# Abdulhamid - Ibrahim
+# Abdulhamid
 # CS445-MAP
