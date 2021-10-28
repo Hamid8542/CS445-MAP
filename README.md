@@ -1,3 +1,6 @@
-# Hello Professor Okalu - adding hello to your README PAGE 
+# CS445-MAP LAB - SOLUTIONS
 # Abdulhamid Ibrahim @ MIU
-# CS445-MAP
+# [Lab1a]()
+# [Lab1b]()
+# [Lab2]()
+# [Lab3a]()
