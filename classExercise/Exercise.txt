@@ -1,0 +1,118 @@
+class Student {
+    private firstName: string;
+    private lastName: string;
+    private grades: number[]; //private grades: Array<number>;
+
+    constructor(firstName: string, lastName: string, grades: number[]) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.grades = grades;
+    }
+
+addGrade(grade: number): void {
+    this.grades.push(grade);
+    }
+
+computeAverage(): number {
+    let sum: number = 0.0;
+    for (let i = 0; i < this.grades.length; i++){
+        sum += this.grades[i];
+    }
+    const averageGrade: number = sum / this.grades.length;
+    return averageGrade;
+    }
+
+getFirstName(): string {
+    return this.firstName;
+
+}
+getLastName(): string {
+    return this.lastName;
+}
+
+    
+}
+
+const grades = [80.5, 95.0,  100];
+const student1 = new Student("John", "Smith", grades);
+const avg = student1.computeAverage().toFixed(2);
+console.log(`The Average grade scored by ${student1.getFirstName()} ${student1.getLastName()} is ${avg}`);
+
+================Exercise-01  Soluton=========================
+
+class University {
+    name: string;
+    dept: string;
+
+    constructor(name: string, dept: string) {
+        this.name = name;
+        this.dept = dept;
+    }
+    graduation(year) {
+        console.log(`Graduating ${this.dept} ${year} students`);
+    }
+}
+
+let miu = new University("MIU", "MSD");
+miu.graduation(2021);
+
+============Exercise-02 Soluton=================
+
+let bankAccount = { 
+    money: 2000,
+    deposit(value: number) { 
+        this.money += value; 
+    } 
+}; 
+let myself = { 
+    name: "John", 
+    bankAccount: bankAccount, 
+    hobbies: ["Violin", "Cooking"] 
+}; 
+
+myself.bankAccount.deposit(3000); 
+console.log(myself);
+
+=============Exercise-03 Soluton=========
+class Car {
+    name: string;
+    acceleration: number = 0;
+    
+constructor(name: string) {
+    this.name = name;
+   }
+
+honk(): void {
+    console.log(` ${this.name} is saying: Toooooooooot!`);
+}
+accelerate(speed: number) {
+    this.acceleration = this.acceleration + speed;
+}
+}
+
+let car = new Car("BMW");
+car.honk(); // BMW is saying: Toooooooooot!
+
+car.accelerate(0);
+console.log(car.acceleration); // 0
+
+
+car.accelerate(60);
+console.log(car.acceleration); // 60
+
+=============Exercise-04 Soluton=========
+
+let baseObject = { 
+    width: 0, 
+    length: 0 
+}; 
+let rectangle = Object.create(baseObject); 
+
+rectangle.width = 5; 
+rectangle.length = 2; 
+
+rectangle.calcSize = function() { 
+    return this.width * this.length; 
+}; 
+
+console.log(rectangle.calcSize()); // 10
