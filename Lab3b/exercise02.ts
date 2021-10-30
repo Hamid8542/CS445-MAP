@@ -1,6 +1,7 @@
 /**
  * exercise02.ts
  * @author Abdulhamid
+ * Date Oct 30,2021
  */
 
 //  ## Exercise 02

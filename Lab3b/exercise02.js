@@ -1,6 +1,7 @@
 /**
  * exercise02.ts
  * @author Abdulhamid
+ * Date Oct 30,2021
  */
 //  ## Exercise 02
 //  Re-write the following code using TypeScript. Try to be as explicit as possible 

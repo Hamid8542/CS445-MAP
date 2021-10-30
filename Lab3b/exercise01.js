@@ -1,6 +1,7 @@
 /**
  * exercise01.ts
  * @author Abdulhamid Ibrahim
+ * Date Oct 30,2021
  */
 // ## Exercise 01
 // Re-write the following code using TypeScript. Try to be as explicit as possible and add Types to everything you can. When you are done, transpile the TS code to JS code and inspect the JS code.

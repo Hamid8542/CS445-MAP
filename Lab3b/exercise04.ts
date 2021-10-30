@@ -1,6 +1,7 @@
 /**
  * exercise04.ts
  * @author Abdulhamid Ibrahim
+ * Date Oct 30,2021
  */
 
 // ## Exercise 04

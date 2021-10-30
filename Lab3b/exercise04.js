@@ -1,6 +1,7 @@
 /**
  * exercise04.ts
  * @author Abdulhamid Ibrahim
+ * Date Oct 30,2021
  */
 // ## Exercise 04
 // Re-write the following code using TypeScript Class syntax. Try to be as explicit as possible and
