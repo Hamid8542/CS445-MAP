@@ -28,7 +28,7 @@ class University {
         this.name = name;
         this.dept = dept;
     }
-    graduation(year) {
+    graduation(year: number): void {
         console.log(`Graduating ${this.dept} ${year} students`);
     }
 }

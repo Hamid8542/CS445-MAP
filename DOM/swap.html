@@ -1,0 +1,45 @@
+<!-- 2. Write javascript code to swap the value between two input text box. When user click 
+        "Swap" button, the values in input1 and input2 are being swapped.
+        The HTML code is provided below. Your JS code must be written in the <script> tag listed in the 
+        HTML code below -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>SWAP</title>
+
+    <script>
+        //write your js code here
+
+    function swap() {
+      let obj1 = document.getElementById('input1').value;
+      let obj2 = document.getElementById('input2').value;
+
+      let temp = obj1;
+      obj1 = obj2;
+      obj2 = temp;
+      
+      // Save the swapped values to the input element.
+      document.getElementById('input1').value = obj1;
+      document.getElementById('input2').value = obj2;
+    }
+    
+    function clearText(){
+      document.getElementById('input1').value = '';
+      document.getElementById('input2').value = '';
+    }
+
+        </script>
+</head>
+<body>
+    <input id="input1" />
+    <input id="input2" />
+    <button id="btn" onClick="swap()" >Swap</button>
+    <button id="btn" onClick="clearText()" >Clear</button>
+
+   
+</body>
+</html>

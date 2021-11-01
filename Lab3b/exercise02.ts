@@ -24,7 +24,10 @@
 //  console.log(myself);
 //  ```
 
-let bankAccount = { 
+let bankAccount = {
+    money: number;
+    deposit(value: number): void
+} = {
     money: 2000,
     deposit(value: number) { 
         this.money += value; 

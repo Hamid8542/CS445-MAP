@@ -35,6 +35,7 @@ class Car {
     
 constructor(name: string) {
     this.name = name;
+    this.acceleration = 0;
    }
 
 honk(): void {
