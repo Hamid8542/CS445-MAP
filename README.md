@@ -10,4 +10,4 @@
 # [Lab3b](https://github.com/Hamid8542/CS445-MAP/tree/main/Lab3b)
 # [Lab4 Swap](https://hamid8542.github.io/cs445/swap.html)
 # [Lab4 Calculator](https://hamid8542.github.io/cs445/myCalculator.html)
-# [Lab5]{https://github.com/Hamid8542/CS445-MAP/blob/main/Lab5/lab5.js}
+# [Lab5](https://github.com/Hamid8542/CS445-MAP/blob/main/Lab5/lab5.js)
