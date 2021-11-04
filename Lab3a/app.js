@@ -21,6 +21,8 @@ function calculateAverage(arr) {
     return (total / count).toFixed(2);
 }
 console.log("The Average of " + [17, 9, 4, 82, 15, 36] + " is " + calculateAverage(array));
+// console.log("The Average of " + [9, 4, 1, 7, 2, 3, 5, 8, 10, 6] + " is " + calculateAverage2(array));
+
 var array2 = [9, 4, 1, 7, 2, 3, 5, 8, 10, 6];
 function calculateAverage2(arr2) {
     var total2 = 0;
@@ -32,3 +34,9 @@ function calculateAverage2(arr2) {
     return (total2 / count2).toFixed(2);
 }
 console.log("The Average of " + [9, 4, 1, 7, 2, 3, 5, 8, 10, 6] + " is " + calculateAverage2(array2));
+
+// Task4: Given below is a set of declarations and initialization of constants for Tax rates used in a Payroll application.
+//     const FICA = 10;
+//     const STATE = 5;
+//     const MEDICARE = 12;
+// Using TypeScript, write code to declare these constants as part of an enum type.

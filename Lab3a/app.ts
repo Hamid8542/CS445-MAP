@@ -13,7 +13,7 @@
 //  The Average of [9, 4, 1, 7, 2, 3, 5, 8, 10, 6] is 5.50
 
 const array = [17, 9, 4, 82, 15, 36];
-function calculateAverage(arr) {
+function calculateAverage(arr)  {
     let total: number = 0;
     let count: number = 0;
 
@@ -26,7 +26,7 @@ function calculateAverage(arr) {
 }
 
 console.log(`The Average of ${[17, 9, 4, 82, 15, 36]} is ${calculateAverage(array)}`);
-
+console.log(`The Average of ${[9, 4, 1, 7, 2, 3, 5, 8, 10, 6]} is ${calculateAverage2(array)}`);
 
 const array2 = [9, 4, 1, 7, 2, 3, 5, 8, 10, 6];
 
