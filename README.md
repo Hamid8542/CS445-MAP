@@ -12,3 +12,4 @@
 # [Lab4 Calculator](https://hamid8542.github.io/cs445/myCalculator.html)
 # [Lab5](https://github.com/Hamid8542/CS445-MAP/blob/main/Lab5/lab5.js)
 # [Quize Practice2](https://github.com/Hamid8542/CS445-MAP/tree/main/CRMapps)
+# [Lab6](https://github.com/Hamid8542/CS445-MAP/blob/main/Lab6/lab6.js)

@@ -5,14 +5,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>SWAP</title>
 
-    <script>
-        //write your js code here
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>>SWAP</title>
+
+  <script>
+    //write your js code here
 
     function swap() {
       let obj1 = document.getElementById('input1').value;
@@ -21,25 +22,25 @@
       let temp = obj1;
       obj1 = obj2;
       obj2 = temp;
-      
+
       // Save the swapped values to the input element.
       document.getElementById('input1').value = obj1;
       document.getElementById('input2').value = obj2;
     }
-    
-    function clearText(){
+
+    function clearText() {
       document.getElementById('input1').value = '';
       document.getElementById('input2').value = '';
     }
 
-        </script>
+  </script>
 </head>
-<body>
-    <input id="input1" />
-    <input id="input2" />
-    <button id="btn" onClick="swap()" >Swap</button>
-    <button id="btn" onClick="clearText()" >Clear</button>
 
-   
+<body>
+  <input id="input1" />
+  <input id="input2" />
+  <button id="btn" onClick="swap()">Swap</button>
+  <button id="btn" onClick="clearText()">Clear</button>
 </body>
+
 </html>

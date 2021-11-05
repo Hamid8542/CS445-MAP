@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        console.log(globalThis);
+    </script> -->
+
+    <!-- <script>
+        var firstName = "Anna"; 
+        const f = function() {
+        var lastName = "Smith";
+        function() {
+        console.log(firstName);
+        }
+        }
+        f();
+        </script> -->
+
+    <!-- <div id="content">
+        <p>This is a paragraph of text with <a href="/path/page.html">link in it</a>
+        <p>.
+    </div>
+
+    <script>
+        document.getElementById("content").innerHTML = "link in it";
+    </script> -->
+
+
+
+    <h1 id="login-header">Login</h1>
+
+    <form id="login-form">
+        <p>User Name :
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+        </p>
+        <p>Password :
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        </p>
+        <input type="submit" value="Login" id="login-form-submit">
+    </form>
+
+    <!-- <script>
+
+document.getElementById("login-form-submit").onclick = function () {
+    let txtValue = document.getElementById("username");
+    txtValue.textContent;
+
+  loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "user" && password === "web_dev") {
+        alert("You have successfully logged in.");
+        location.reload();
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+})
+
+const btn1 = document.getElementById("btn1");
+btn1.onclick = function () {
+    console.log('Button 1 clicked.....1');
+}
+btn1.onclick = function () {
+    console.log('Button 1 clicked.....2');
+} -->
+
+        <button type = "button" id="btn1">Button 1</button>
+        <button type = "button" id="btn2">Button 2</button>
+
+        
+    <script>
+        document.getElementById("btn1").onclick = function () {
+            this.style.backgroundColor = "red";
+        }
+
+        document.getElementById("login-form-submit").onclick = function () {
+            this.style.backgroundColor = "red";
+
+    </script>
+
+
+</body>
+
+</html>
