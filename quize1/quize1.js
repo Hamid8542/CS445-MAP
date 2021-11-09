@@ -11,20 +11,36 @@ var Employee = /** @class */ (function () {
         this.salary = salary;
         this.salesRecorded = salesRecorded;
     }
-    Employee.prototype.getemployeeId = function () {
-        this.employeeId = this.employeeId;
+    Employee.prototype.getEmployeeId = function () {
+        return this.employeeId;
     };
-    Employee.prototype.getirsftName = function () {
-        this.firstName = this.firstName;
+    Employee.prototype.setEmployeeId = function (employeeId) {
+        this.employeeId = employeeId;
     };
-    Employee.prototype.getlastName = function () {
-        this.lastName = this.lastName;
+    Employee.prototype.getFirsftName = function () {
+        return this.firstName;
+    };
+    Employee.prototype.setFirstName = function (firstName) {
+        this.firstName = firstName;
+        ;
+    };
+    Employee.prototype.getLastName = function () {
+        return this.lastName;
+    };
+    Employee.prototype.setLastName = function (lastName) {
+        this.lastName = lastName;
     };
     Employee.prototype.getsalary = function () {
-        this.salary = this.salary;
+        return this.salary;
     };
-    Employee.prototype.getsalesRecorded = function () {
-        this.salesRecorded = this.salesRecorded;
+    Employee.prototype.setSalary = function (salary) {
+        this.salary = salary;
+    };
+    Employee.prototype.getSalesRecorded = function () {
+        return this.salesRecorded;
+    };
+    Employee.prototype.setSalesRecorded = function (salesRecorded) {
+        this.salesRecorded = salesRecorded;
     };
     Employee.prototype.toString = function () {
         return "{ Employee ID: " + this.employeeId + " First Name: " + this.firstName + "  Last Name: " + this.lastName + " Salary: $" + this.salary.toFixed(2) + " }";
@@ -42,3 +58,6 @@ var Employee = /** @class */ (function () {
 var emp = new Employee("000-01-101", "Anna", "Smith", 25500.50, [15, 10, 13]);
 console.log(emp.toString());
 console.log(emp.getTotalSalesRecorded());
+// Output:
+// { Employee ID: 000-01-101 First Name: Anna  Last Name: Smith Salary: $25500.50 }
+// 38

@@ -6,13 +6,13 @@
 
 class Employee {
 
-   private employeeId: String;
-   private firstName: String;
-   private lastName: String;
+   private employeeId: string;
+   private firstName: string;
+   private lastName: string;
    private salary: number;
    private salesRecorded: Array<number>;
     
-    constructor(employeeId: String, firstName: String, lastName: String, salary: number, salesRecorded: Array<number>) {
+    constructor(employeeId: string, firstName: string, lastName: string, salary: number, salesRecorded: Array<number>) {
         this.employeeId = employeeId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -20,21 +20,39 @@ class Employee {
         this.salesRecorded = salesRecorded;
 
     }
-    getemployeeId() {
-        this.employeeId = this.employeeId;
+    public getEmployeeId(): string{
+      return this.employeeId;
     }
-    getirsftName() {
-        this.firstName = this.firstName;
+    public setEmployeeId(employeeId: string): void {
+        this.employeeId = employeeId;
     }
-    getlastName() {
-        this.lastName = this.lastName;
+
+    public getFirsftName(): string {
+        return this.firstName ;
     }
-    getsalary() {
-        this.salary = this.salary;
+    public setFirstName(firstName: string): void{
+        this.firstName = firstName;
+        ;
     }
-    getsalesRecorded() {
-        this.salesRecorded = this.salesRecorded;
+    public getLastName(): string {
+        return this.lastName;
     }
+    public setLastName(lastName: string): void {
+        this.lastName = lastName;
+    }
+    public getsalary(): number {
+        return this.salary;
+    }
+    public setSalary(salary: number): void {
+        this.salary = salary;
+   }
+    public getSalesRecorded(): number []{
+        return this.salesRecorded;
+    }
+    public setSalesRecorded(salesRecorded: number []): void{
+        this.salesRecorded = salesRecorded;
+    }
+
 
     public toString(): string {
 
@@ -55,6 +73,9 @@ const emp = new Employee("000-01-101", "Anna", "Smith", 25500.50, [15, 10, 13]);
 
 console.log(emp.toString());
 console.log(emp.getTotalSalesRecorded());
-   
+
+// Output:
+// { Employee ID: 000-01-101 First Name: Anna  Last Name: Smith Salary: $25500.50 }
+// 38
 
 

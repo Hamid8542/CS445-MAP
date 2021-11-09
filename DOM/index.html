@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    window.onload = pageload;
 </head>
 <body>
     <!-- <script>
@@ -24,23 +25,39 @@
 
 <!-- <div id="content"><p>This is a paragraph of text with <a href="/path/page.html">link in it </a></p></div>
 <script> -->
-    <button id="btn1">Button 1</button>
-    <button id="btn2">Button 2</button>
+    <!-- <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button> -->
 
-    <script>
+    <!-- <script>
         document.getElementById("btn1").onclick = function() {
             this.style.backgroundColor = "red";
         	}
+    </script> -->
+<!-- <div id="content"><p>This is a paragraph of text with <a href="/path/page.html">link in it</a><p>.</div> -->
+
+    <script>
+    //    let abc = document.getElementById("content").style.color = red;
+    //    document.getElementById("content").style.color = red;
+        	// console.log(abc)
+
+            // document.getElementById("content").innerHTML = function() 		{
+            // this.style.backgroundColor = "red";
+        	// }
     </script>
 
-
-// function div(){
-//     let 
-// }
-// let result = Document.getElementById("content").console;
-// console.log(result);
-
 </script>
+<main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+<form id="login-form">
+      <input type="text" name="username" id="username-field" style = "color: red;" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" style = "color: red;" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" style = "color: blue;" id="login-form-submit">
+    </form>
 
+      </main>
 </body>
 </html>

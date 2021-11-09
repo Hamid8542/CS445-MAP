@@ -20,20 +20,36 @@
     // Getter & Setter
     public getCustomerId(): number {
         return this.customerId;
-    }
+     }
+    public setCustomerId(customerId: number): void {
+        this.customerId = customerId;
+     }
+
     public getFirstName(): string {
         return this.firstName;
-    }
+     }
+     public setFirstName(firstName: string): void{
+         this.firstName = firstName;
+     }
+
     public getLastName(): string {
         return this.lastName;
+     }
+     
+     public setLasttName(lastName: string): void{
+        this.firstName = lastName;
     }
     public getPremiumClass(): boolean {
         return this.premiumClass;
-    }
+     }
+     public setPremiumClass(premiumClass: boolean): void{
+         this.premiumClass = premiumClass;
+     }
+
 
     public toString(): string {
 
-        return `{Customer ID: ${this.customerId} First Name: ${this.firstName} LastName : ${this.lastName} PremiumClass: ${this.premiumClass} }`;
+        return `{Customer ID: ${this.customerId} First Name: ${this.firstName} LastName : ${this.lastName} PremiumClass: ${this.premiumClass() === true ? "Tes" : "No"} }`;
 
     }
 

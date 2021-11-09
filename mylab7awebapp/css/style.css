@@ -1,0 +1,29 @@
+
+.body {
+    background-color: cornflowerblue;
+}
+.container {
+    /* display:flex; */
+    color: black;
+    background-color: burlywood;
+    margin-right: 2px;
+    margin-left:  2px; 
+    padding: 10px;
+    justify-content: center;
+   
+}
+
+.footer{
+  border: solid 1px ;
+  background-color: lightskyblue;
+  padding: 20px;
+  background-color: lightskyblue;
+    
+}
+.myProfile{
+    display: grid;
+    max-width:100px;
+    object-fit: contain;
+    border-radius: 50%;
+    
+    }
