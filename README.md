@@ -14,3 +14,4 @@
 # [Quize Practice2](https://github.com/Hamid8542/CS445-MAP/tree/main/CRMapps)
 # [Lab6](https://github.com/Hamid8542/CS445-MAP/tree/main/Lab6)
 # [Lab 7a](https://github.com/Hamid8542/CS445-MAP/tree/main/mylab7awebapp)
+# [Lab 7b](https://hamid8542.github.io/cs445/index.html)

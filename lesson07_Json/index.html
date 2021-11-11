@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+        <!-- <script src = "fetch-get.js"> -->
+        <!-- <script src = "fetch-post.js"> -->
+        <!-- <script src = "fetch-async-await.js"> -->
+        <script>
+            const jsonString = '{"window": {"title": "Sample Widget","width": 500,"height": 500},"image": { "src": "images/logo.png", "coords": [250, 150, 350, 400], "alignment": "center" }, "messages": [{ "text": "Save", "offset": [10, 30] }, { "text": "Help", "offset": [0, 50] }, { "text": "Quit", "offset": [30, 10] }], "debug": "true"}';
+            const data = JSON.parse(jsonString);
+            let wind = data.window;
+            let title = data.window.title;
+            let coord = data.image.coords[2];
+            let len = data.messages.length;
+            let message = data.messages;
+            let y = data.messages[1].offset[1];
+            let lastMessage = data.messages[len-1].offset[1];
+
+            console.log(jsonString);
+            console.log(wind);
+            console.log(title);       // Sample Widget
+            console.log(coord);       // 350
+            console.log(len);         // 3
+            console.log(message);     // Save , Help, Quit
+            console.log(y);           // 50
+            console.log(lastMessage); // 10
+
+        
+
+        </script>
+
+</head>
+<h1>Hello JSON !</h1>
+Change this file to switch among different fetch demos. Comment and uncomment different
+<body>
+
+</body>
+
+</html>
