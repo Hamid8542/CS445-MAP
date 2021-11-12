@@ -18,6 +18,7 @@ async function displayUserInHtml() {
         let user = userArr[i];
         document.getElementById('img' + i).src = user.picture.medium;
         document.getElementById('name' + i).innerHTML = user.name.first + ' ' + user.name.last;
+        document.getElementById('title' + i).innerHTML = 'title:' + user.title;
         document.getElementById('phone' + i).innerHTML = 'phone:' + user.phone;
         document.getElementById('email' + i).innerHTML = user.email;
     }
