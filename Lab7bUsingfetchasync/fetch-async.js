@@ -13,16 +13,25 @@ async function fetchUsers() {
 }
 
 async function displayUserInHtml() {
-    const userArr = await fetchUsers(5);
-    for (let i = 0; i < userArr.length; i++) {
-        let user = userArr[i];
-        document.getElementById('img' + i).src = user.picture.medium;
-        document.getElementById('name' + i).innerHTML = user.name.first + ' ' + user.name.last;
-        document.getElementById('title' + i).innerHTML = 'title:' + user.title;
-        document.getElementById('phone' + i).innerHTML = 'phone:' + user.phone;
-        document.getElementById('email' + i).innerHTML = user.email;
-    }
+    const employeeDiv = document.getElementById('employee-list');
+    employeeDiv.innerHTML = '';
+    const userArray = await fetchUsers(5);
 
+    userArray.forEach(user => {
+        let template = ` <div class="col 4">
+                           <img src="${user.picture.medium}" />
+                         </div>
+                         <div class="col 8">
+                            <h4>${user.name.first} ${user.name.last}</h3>
+                            <p>phone: ${user.phone}</p>
+                            <p>${user.email}</p>
+                         </div> `;
+        
+        const div = document.createElement('div');
+        div.classList = 'row border-top';
+        div.innerHTML = template;
+        employeeDiv.appendChild(div);
+    });
 }
 
 window.onload = async function () {

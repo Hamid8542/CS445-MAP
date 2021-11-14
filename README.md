@@ -17,4 +17,4 @@
 # [Lab 7b](https://hamid8542.github.io/cs445/index.html)
 # [Lab 8](https://hamid8542.github.io/)
 # [Lab 9](https://github.com/Hamid8542/CS445-MAP/tree/main/Lab9-Assign)
-# [Lab 10](https://github.com/Hamid8542/CS445-MAP)
+# [Lab 10](https://github.com/Hamid8542/CS445-MAP/)
